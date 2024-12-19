@@ -53,7 +53,7 @@ body {
     flex: 1;
     padding-top: 3rem;
     padding-left: 3rem;
-    max-width: 400px;
+    max-width: 100%;
 }
 
 .avatar-section {
@@ -120,13 +120,11 @@ h1 {
 }
 
 .keys-section {
-    display: none;
     margin: 1.5rem auto 0;
     width: 100%;
 }
 
 .key-container {
-    display: none;
     background: white;
     border-radius: 12px;
     padding: 0.8rem;
@@ -231,7 +229,6 @@ h1 {
 }
 
 .instructions-container {
-    display: none;
     margin-top: 2rem;
     background: #f8f9fa;
     padding: 1.5rem;
@@ -260,6 +257,7 @@ h1 {
 }
 
 .key-container {
+    display: block;
     margin-bottom: 0;
 }
 
@@ -319,6 +317,7 @@ h1 {
         width: 100%;
     }
     .instructions-container {
+        display: block;
         padding: 1rem;
     }
     .path-list {
