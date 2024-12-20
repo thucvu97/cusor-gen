@@ -39,11 +39,7 @@ function setGeneratedAvatar() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    loadHeader();
-    setInitialAvatar();
-    window.addEventListener('resize', setInitialAvatar);
     handleGenerate();
-
 });
 
 function generateUUID() {
@@ -112,24 +108,4 @@ function copyToClipboard(elementId) {
     }, 1000);
 }
 
-async function loadHeader() {
-    try {
-        const isInSubDir = window.location.pathname.includes('/hacks/') || window.location.pathname.includes('/blogs/');
-        const headerPath = isInSubDir ? '../components/header.html' : './components/header.html';
 
-        const response = await fetch(headerPath);
-        const html = await response.text();
-
-        // Insert the header at the start of main-container instead of before main
-        const mainContainer = document.querySelector('.main-container');
-        mainContainer.insertAdjacentHTML('afterbegin', html);
-
-        // Remove the existing logo if it exists
-        const existingLogo = document.querySelector('.content-wrapper .logo');
-        if (existingLogo) {
-            existingLogo.remove();
-        }
-    } catch (error) {
-        console.error('Error loading header:', error);
-    }
-}
