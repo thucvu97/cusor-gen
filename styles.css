@@ -246,7 +246,7 @@ h1 {
     margin: 0.5rem 0;
 }
 
-.code-block {
+.code-block, .code-block-2 {
     background: #2d2d2d;
     color: #fff;
     padding: 1rem;
@@ -720,4 +720,55 @@ h1 {
 
 .manual-link:hover {
     text-decoration: underline;
+}
+
+.one-click-solution {
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0 30px;
+    color: white;
+}
+
+.one-click-solution h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.code-blocks {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.os-block {
+    margin-bottom: 15px;
+}
+
+.os-block:last-child {
+    margin-bottom: 0;
+}
+
+.os-block h5 {
+    color: white;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.code-block {
+    background: rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    padding: 12px;
+    border-radius: 4px;
+    overflow-x: auto;
+    font-size: 14px;
+    margin: 0;
+}
+
+.code-block code {
+    white-space: pre-wrap;
+    word-break: break-all;
 }
