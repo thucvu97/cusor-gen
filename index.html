@@ -36,9 +36,38 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <!-- Canonical URL -->
+    <style>
+        /* Style for the advertisement to make it stand out */
+        .dd-section {
+            background-color: #f8d7da;
+            color: #721c24;
+            padding: 15px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 9999;
+        }
+
+        .dd-section a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .dd-section a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 
 <body onload="handleGenerate()">
+    <!-- Advertisement Section at the top -->
+    <div class="dd-section">
+        Mua Gmail EDU chỉ từ 200đ đến 300đ mỗi tài khoản! (đăng kí Hailou, Kling, Vidu FREE TRIAL) Truy cập ngay <a href="https://www.imeo.store/" target="_blank">IMEO Store</a> để sở hữu Gmail với giá siêu rẻ!
+    </div>
+
     <div class="one-click-solution mb-4">
         <h3>🚀 One-Click Solution</h3>
         
@@ -131,8 +160,6 @@
             </article>
         </div>
     </main>
-
- 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./script.js"></script>
